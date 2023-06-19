@@ -16,7 +16,7 @@
         Poll_database pd = new Poll_database(ConnectionProvider.getConnection());
         if (str.equals("1")) {
             list = pd.getRecentPolls();
-            ss = "recent";
+            ss = "Recent";
         }
         if (str.equals("2")) {
             list = pd.getExpiredPolls();
@@ -28,7 +28,7 @@
         }
         if (str.equals("4")) {
             list = pd.getTrendingPolls();
-            ss = "trending";
+            ss = "Trending";
         }
 
     %>
@@ -52,6 +52,7 @@
             </div>
         </div>
         <main>
+            <h1><%=ss%> Polls </h1>
             <div class="container">
                 <%for (Poll p : list) {
                         Company_database cd = new Company_database(ConnectionProvider.getConnection());
