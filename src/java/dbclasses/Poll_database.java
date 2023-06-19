@@ -1,6 +1,6 @@
 package dbclasses;
 
-import com.mysql.cj.protocol.Resultset;
+import com.mysql.cj.protocol.Resultset;   
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -200,7 +200,7 @@ public class Poll_database {
         ArrayList<Poll> list = null;
 
         try {
-            String query = "SELECT * from rateitdb.poll P INNER JOIN rateitdb.review R ON P.POLL_ID = R.POLL_ID GROUP BY R.POLL_ID order by count(R.POLL_ID) DESC";
+            String query = "SELECT P.POLL_ID,P.COMPANY1,P.COMPANY2,P.POLL_ID,P.CATEGORY,P.START_DATE,P.END_DATE,P.POLL_NO from rateitdb.poll P INNER JOIN rateitdb.review R ON P.POLL_ID = R.POLL_ID GROUP BY R.POLL_ID order by count(R.POLL_ID) DESC";
 
             PreparedStatement stmt = this.con.prepareStatement(query);
             

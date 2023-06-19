@@ -54,13 +54,15 @@
         <main>
             <h1><%=ss%> Polls </h1>
             <div class="container">
-                <%for (Poll p : list) {
+                <% 
+                    
+                    for(Poll p : list) {
                         Company_database cd = new Company_database(ConnectionProvider.getConnection());
                         Company cmp1 = cd.getCompanyById(p.getCOMPANY1());
                         Company cmp2 = cd.getCompanyById(p.getCOMPANY2());
                         int ratings1 = rd.getOverallRatings(cmp1.getCOMPANY_ID());
                         int ratings2 = rd.getOverallRatings(cmp2.getCOMPANY_ID());
-
+                    
                 %>
                 <div class="items item1">
 
@@ -173,9 +175,11 @@
                             <%}%>
                         </div>
                     </section>
-
+                    <% if(str.equals("2")){%>
+                    <A href="compare_poll_page.jsp?a=<%=p.getPOLL_ID() %>"> <button class="btn"> SHOW RESULT </button>
+                    <%} else {%>
                     <button class="btn">GIVE REVIEW</button>
-
+                    <%}%>
                 </div>
                 <%}%>
                 <!-- Ratings and star code completes -->
