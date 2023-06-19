@@ -41,9 +41,8 @@ ArrayList<Report> rl = rp.getAllReport();
               content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/20a4a662a5.js"
         crossorigin="anonymous"></script>
-        <!--<script src="javascript\multiselect-dropdown.js"></script>-->
-        <link rel="stylesheet" href="css/admin_panel.css?1">
-        <!--        <link rel="stylesheet" href="bootstrap.css">-->
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+        <link rel="stylesheet" href="css/admin_panel.css?41">
         <title>Admin Panel</title>
 
         <script
@@ -58,8 +57,8 @@ ArrayList<Report> rl = rp.getAllReport();
                                                                 <img id="rateit-logo"
                                                                     src="https://github.com/GP-GANG/rateit.github.io/blob/main/Other%20Files/photos/logo.png?raw=true">
                                                                 <tr height="50px">
-                                                                    <td><a href="#default_page" class="header-content">‎ <i
-                                                                                class="fa-solid fa-house"></i>
+                                                                    <td><a href="#default_page" class="header-content" id="default-page">‎ <i
+                                                                                class="fa-solid fa-house" ></i>
                                                                             Dashboard</a></td>
                                                                 </tr>
                                                                 <tr height="50px">
@@ -166,8 +165,8 @@ ArrayList<Report> rl = rp.getAllReport();
                                                                  </div>
                                                                  <div class="sub-box">
                                                                 <div id="box1">
-                                                                    <div class="calendar">
-
+                                                                    <div class="calendar" id="calendar">
+<!--
                                                                         <div class="month">
                                                                             <ul>
                                                                                 <li class="prev">&#10094;</li>
@@ -190,39 +189,9 @@ ArrayList<Report> rl = rp.getAllReport();
                                                                             <li>Su</li>
                                                                         </ul>
 
-                                                                        <ul class="days">
-                                                                            <li>1</li>
-                                                                            <li>2</li>
-                                                                            <li>3</li>
-                                                                            <li>4</li>
-                                                                            <li>5</li>
-                                                                            <li>6</li>
-                                                                            <li>7</li>
-                                                                            <li>8</li>
-                                                                            <li>9</li>
-                                                                            <li>10</li>
-                                                                            <li>11</li>
-                                                                            <li>12</li>
-                                                                            <li>13</li>
-                                                                            <li>14</li>
-                                                                            <li>15</li>
-                                                                            <li>16</li>
-                                                                            <li>17</li>
-                                                                            <li>18</li>
-                                                                            <li>19</li>
-                                                                            <li>20</li>
-                                                                            <li>21</li>
-                                                                            <li>22</li>
-                                                                            <li>23</li>
-                                                                            <li>24</li>
-                                                                            <li>25</li>
-                                                                            <li>26</li>
-                                                                            <li>27</li>
-                                                                            <li><span class="active">28</span></li>
-                                                                            <li>29</li>
-                                                                            <li>30</li>
-                                                                            <li>31</li>
-                                                                        </ul>
+                                                                        <div class="days" id="days">
+                                                                            
+                                                                        </div>-->
                                                                     </div>
 
                                                                 </div>
@@ -809,7 +778,7 @@ ArrayList<Report> rl = rp.getAllReport();
 
                         </div>
                                                 <span><%=cmp1.getCATEGORY() %></span>
-                                        <span><%=rd.getOverallRatings(cmp1.getCOMPANY_ID()) %></span>
+                                        <span></span>
                                   <input class="file-upload"
                                                        name="report1"
                                                        type="file">
@@ -965,6 +934,22 @@ ArrayList<Report> rl = rp.getAllReport();
         <script
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="javascript/AdminPanel.js?8"></script>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+        
+        calendar.on('dateClick', function(info) {
+            $.post("calendarCheck",{"date":info.dateStr},function(res){
+                alert(res);
+            })
+});
+      });
+        </script>
 <!--<script>
              $(document).ready(functi on () {
                      

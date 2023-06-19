@@ -176,7 +176,7 @@
                         </div>
                     </section>
                     <% if(str.equals("2")){%>
-                    <A href="compare_poll_page.jsp?a=<%=p.getPOLL_ID() %>"> <button class="btn"> SHOW RESULT </button>
+                    <A href="compare_poll_page.jsp?a=<%=p.getPOLL_ID() %>"> <button class="btn"> SHOW RESULT </button></A>
                     <%} else {%>
                     <button class="btn">GIVE REVIEW</button>
                     <%}%>
