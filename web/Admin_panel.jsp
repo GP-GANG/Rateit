@@ -58,7 +58,7 @@ ArrayList<Report> rl = rp.getAllReport();
                                                                 <img id="rateit-logo"
                                                                     src="https://github.com/GP-GANG/rateit.github.io/blob/main/Other%20Files/photos/logo.png?raw=true">
                                                                 <tr height="50px">
-                                                                    <td><a href="#default_page" class="header-content">‎ <i
+                                                                    <td><a href="#default_page" class="header-content default_page">‎ <i
                                                                                 class="fa-solid fa-house"></i>
                                                                             Dashboard</a></td>
                                                                 </tr>
@@ -532,7 +532,7 @@ ArrayList<Report> rl = rp.getAllReport();
                                     </div>
                                     <div class="rcr-box">
                                         <div class="star-1">
-                            <span class="label">Ratings:</span>
+                            <!--<span class="label">Ratings:</span>-->
                             <%if (ratings1 == 0) {%>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
@@ -577,8 +577,9 @@ ArrayList<Report> rl = rp.getAllReport();
                             <%}%>
 
                         </div>
+                            <br>
                                         <span><%=cmp1.getCATEGORY() %></span>
-                                        <span><%=rd.getOverallRatings(cmp1.getCOMPANY_ID()) %></span>
+                                        <span><%--rd.getOverallRatings(cmp1.getCOMPANY_ID()) --%></span>
                                     </div>
                                 </div>
                                 <div class="comp-cont-box2">
@@ -591,7 +592,7 @@ ArrayList<Report> rl = rp.getAllReport();
                                     </div>
                                     <div class="rcr-box">
                                          <div class="star-1">
-                            <span class="label">Ratings:</span>
+                            <!--<span class="label">Ratings:</span>-->
                             <%if (ratings1 == 0) {%>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
@@ -636,8 +637,9 @@ ArrayList<Report> rl = rp.getAllReport();
                             <%}%>
 
                         </div>
+                            <br>
                                        <span><%=cmp2.getCATEGORY() %></span>
-                                        <span><%=rd.getOverallRatings(cmp2.getCOMPANY_ID()) %></span>
+                                        <span><%--rd.getOverallRatings(cmp2.getCOMPANY_ID()) --%></span>
                                    </div>
                                 </div>
                             </div>
@@ -763,7 +765,7 @@ ArrayList<Report> rl = rp.getAllReport();
                                             </div>
                                             <div class="rcr-box">
                                                 <div class="star-1">
-                            <span class="label">Ratings:</span>
+                            <!--<span class="label">Ratings:</span>-->
                             <%if (ratings1 == 0) {%>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
@@ -808,8 +810,8 @@ ArrayList<Report> rl = rp.getAllReport();
                             <%}%>
 
                         </div>
-                                                <span><%=cmp1.getCATEGORY() %></span>
-                                        <span><%=rd.getOverallRatings(cmp1.getCOMPANY_ID()) %></span>
+                                                <span><%--cmp1.getCATEGORY() --%></span>
+                                        <span><%--rd.getOverallRatings(cmp1.getCOMPANY_ID()) --%></span>
                                   <input class="file-upload"
                                                        name="report1"
                                                        type="file">
@@ -826,7 +828,7 @@ ArrayList<Report> rl = rp.getAllReport();
                                             </div>
                                             <div class="rcr-box">
                                                 <div class="star-1">
-                            <span class="label">Ratings:</span>
+                            <!--<span class="label">Ratings:</span>-->
                             <%if (ratings1 == 0) {%>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
@@ -871,8 +873,8 @@ ArrayList<Report> rl = rp.getAllReport();
                             <%}%>
 
                         </div>
-                                                <span><%=cmp2.getCATEGORY() %></span>
-                                        <span><%=rd.getOverallRatings(cmp2.getCOMPANY_ID()) %></span>
+                                                <span><%--cmp2.getCATEGORY() --%></span>
+                                        <span><%--rd.getOverallRatings(cmp2.getCOMPANY_ID()) --%></span>
                                   <input class="file-upload"
                                                        name="report2"
                                                        type="file">

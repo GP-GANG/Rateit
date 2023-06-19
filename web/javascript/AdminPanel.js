@@ -4,6 +4,7 @@
 
 $(document).ready(function () {
     
+    
 //            const Admin_password_forLogin = "1234";
 //            let pass = prompt("Enter Admin key");
 //            if (Admin_password_forLogin != pass){
@@ -16,7 +17,7 @@ $(document).ready(function () {
             $("td").css({ "background-color": "rgba(12, 12, 12, 0.959)", "color": "white" });
             $(a.target).parent().css({ "background": " white", "color": "black" })
             })
-            
+            $(".default_page").click();
             
     })
         

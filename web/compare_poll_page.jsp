@@ -32,6 +32,9 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+             font-family: verdana;
+            font-size: 18px;
+               
         }
 
         #container {
@@ -93,9 +96,12 @@
             margin: 10px 30px;
             height: 80px;
             width: 80px;
-            border-radius: 100%;
+            padding: 3px;
+            /*border-radius: 100%;*/
             border: 1px solid black;
             margin-top: -40px;
+            background-color: white;
+            
         }
         .box1{
             flex-direction: column;
@@ -129,7 +135,7 @@
             font-size: 22px;
         }
         th {
-           color: white;
+           color: black;
         }
         td{
             text-align: center;
@@ -144,7 +150,7 @@
         }
         
         .left, .right {
-            font-family: 'Unbounded', cursive;
+               
         }
         
         .bottom{
@@ -159,6 +165,11 @@
             font-size: 15px;
             background-color: #303030;
         }
+        button:hover{
+                background-color: transparent;
+                color: black;
+                border: 2px solid black;
+            }
     </style>
 </head>
 <% 
