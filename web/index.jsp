@@ -34,7 +34,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!-- <link rel="stylesheet" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" href="" crossorigin="anonymous"> -->
 
-        <link rel="stylesheet" href="css/index.css?2"/>
+        <link rel="stylesheet" href="css/index.css?1"/>
         <link rel="stylesheet" href="css/loading_effect.css?1">
     <script src="javascript/loading_effect.js?1"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -306,11 +306,11 @@
                 </div>
 
                 <div class="cont2">
-                    <p>Rete It Developers</p>
+                    <p>Rate It Developers</p>
                     <dd class="about-text">Vinay Koshti</dd>
                     <dd class="about-text">Neesarg Soni</dd>
-                    <dd class="about-text">Dilip suryal</dd>
-                    <dd class="about-text">Priyanshu Popli</dd>
+                    <dd class="about-text">Dilip Chudiyar</dd>
+                    <dd class="about-text">Priyanshu Patel</dd>
                     <dd class="about-text">Nirmal Prajapati</dd>
                     <dd class="about-text">Dhruv Shere</dd>
                 </div>
@@ -366,10 +366,10 @@
                         <a href="#">Amazon</a> |
                         <a href="#">Raymond</a> |
                         <a href="#">IBM</a> |
-                        <a href="#">Maruti Suzuki</a> 
-                        <a href="#">ICICI Bank</a> 
-                        <a href="#">Axis Bank</a>
-                        <a href="#">Wipro</a> 
+                        <a href="#">Maruti Suzuki</a> | 
+                        <a href="#">ICICI Bank</a> |
+                        <a href="#">Axis Bank</a> |
+                        <a href="#">Wipro</a> |
                         <a href="http://localhost:8080/Rateit.com/comp_review_page.jsp?name=Ultra%20Track%20Cement">Ultratach Cement</a> |
                         <a href="#">Ambuja Cement</a> |
                         <a href="#">Cipla</a> |

@@ -219,6 +219,13 @@ td:hover {
     position:absolute;
     right:20px; top:20px;
 }
+#note{
+    font-size:12px;
+    margin-top: -5px;
+    margin-left: 25px;
+    color:red;
+}
+
 
 /* .....................page1 styling code............................ */
 #page1 {
@@ -653,6 +660,8 @@ td:hover {
     height: 40px;
     margin-top: 20px;
     margin-left: 10px;
+    margin-top: 35px;
+    margin-left: -15%;
 }
 
 .poll-remove-btn1{

@@ -84,7 +84,7 @@
                 <p>Rete it Developers</p>
                 <dd class="about-text">Vinay Koshti</dd>
                 <dd class="about-text">Neesarg Soni</dd>
-                <dd class="about-text">Dilip Suryal</dd>
+                <dd class="about-text">Dilip Chudiyar</dd>
                 <dd class="about-text">Priyanshu Patel</dd>
                 <dd class="about-text">Nirmal Prajapati</dd>
                 <dd class="about-text">Dhruv Shere</dd>
