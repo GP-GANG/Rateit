@@ -324,6 +324,24 @@ public class Poll_database {
         return list;
     }
     
+    public int getTodaysPolls(String date) {
+        int listCount = 0;
+        try {
+            String query = "SELECT count(POLL_ID) FROM POLL where START_DATE = ?";
+            
+            PreparedStatement stmt = this.con.prepareStatement(query);
+            stmt.setString(1,date);
+            ResultSet set = stmt.executeQuery();
+            set.next();
+            listCount = set.getInt(1);
+            
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return listCount;
+    }
+    
    
 
     

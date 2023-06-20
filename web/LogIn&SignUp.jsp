@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/20a4a662a5.js" crossorigin="anonymous"></script>
     <title>Rate It</title>
-    <link href="css/LoginSignup.css?2" rel="stylesheet">
+    <link href="css/LoginSignup.css?1" rel="stylesheet">
 </head>
 
 <body>

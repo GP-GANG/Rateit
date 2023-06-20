@@ -47,7 +47,7 @@
         </div>
         <div id="cont2">
             <div id="content">
-                <CENTER><b> CONTACT US </b></center>
+                
                 <form action="https://formspree.io/f/mqkobyvd" method="post">
                     <input class="name" type="text" id="username" name="username" placeholder="First Name :">
                     <input class="name" type="text" id="username" name="username" placeholder="Last Name :"><br>

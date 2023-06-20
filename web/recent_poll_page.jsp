@@ -39,7 +39,7 @@
         <title>Rate It | <%=ss%> Poll List</title>
         <script src="https://kit.fontawesome.com/c2a4c35825.js" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/20a4a662a5.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/recent_poll_page.css">
+        <link rel="stylesheet" href="css/recent_poll_page.css?3">
         <link rel="stylesheet" href="css/loading_effect.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>    <script src="javascript/loading_effect.js"></script>
 
@@ -52,7 +52,8 @@
             </div>
         </div>
         <main>
-            <h1><%=ss%> Polls </h1>
+            <div id="poll_type_div"></div>
+            <h1 id="poll_type"><%=ss%> Polls </h1>
             <div class="container">
                 <% 
                     
@@ -176,7 +177,7 @@
                         </div>
                     </section>
                     <% if(str.equals("2")){%>
-                    <A href="compare_poll_page.jsp?a=<%=p.getPOLL_ID() %>"> <button class="btn"> SHOW RESULT </button>
+                    <A href="compare_poll_page.jsp?a=<%=p.getPOLL_ID() %>"> <button class="btn"> SHOW RESULT </button></A>
                     <%} else {%>
                      <A href="poll_review_page.jsp?a=<%=p.getPOLL_ID() %>"><button class="btn">GIVE REVIEW</button>
                     <%}%>

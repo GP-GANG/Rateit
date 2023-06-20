@@ -94,8 +94,8 @@
 
         .comp_image{
             margin: 10px 30px;
-            height: 80px;
-            width: 80px;
+            height: 70px;
+            width: 75px;
             padding: 3px;
             /*border-radius: 100%;*/
             border: 1px solid black;

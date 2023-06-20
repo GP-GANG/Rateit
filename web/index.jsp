@@ -76,7 +76,7 @@
                                     <b>Polls</b>
 
                                     <div class="dropdown-content">
-                                        <a href="recent_poll_page.jsp?a=2">Previous Polls</a>
+                                        <a href="recent_poll_page.jsp?a=2">Expired Polls</a>
                                         <a href="recent_poll_page.jsp?a=1">Recent Polls</a>
                                         <a href="recent_poll_page.jsp?a=3">Upcoming Polls</a>
                                         <a href="recent_poll_page.jsp?a=4">Trending Polls</a>

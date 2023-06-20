@@ -41,9 +41,8 @@ ArrayList<Report> rl = rp.getAllReport();
               content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/20a4a662a5.js"
         crossorigin="anonymous"></script>
-        <!--<script src="javascript\multiselect-dropdown.js"></script>-->
-        <link rel="stylesheet" href="css/admin_panel.css?1">
-        <!--        <link rel="stylesheet" href="bootstrap.css">-->
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+        <link rel="stylesheet" href="css/admin_panel.css?4">
         <title>Admin Panel</title>
 
         <script
@@ -166,8 +165,8 @@ ArrayList<Report> rl = rp.getAllReport();
                                                                  </div>
                                                                  <div class="sub-box">
                                                                 <div id="box1">
-                                                                    <div class="calendar">
-
+                                                                    <div class="calendar" id="calendar">
+<!--
                                                                         <div class="month">
                                                                             <ul>
                                                                                 <li class="prev">&#10094;</li>
@@ -190,39 +189,9 @@ ArrayList<Report> rl = rp.getAllReport();
                                                                             <li>Su</li>
                                                                         </ul>
 
-                                                                        <ul class="days">
-                                                                            <li>1</li>
-                                                                            <li>2</li>
-                                                                            <li>3</li>
-                                                                            <li>4</li>
-                                                                            <li>5</li>
-                                                                            <li>6</li>
-                                                                            <li>7</li>
-                                                                            <li>8</li>
-                                                                            <li>9</li>
-                                                                            <li>10</li>
-                                                                            <li>11</li>
-                                                                            <li>12</li>
-                                                                            <li>13</li>
-                                                                            <li>14</li>
-                                                                            <li>15</li>
-                                                                            <li>16</li>
-                                                                            <li>17</li>
-                                                                            <li>18</li>
-                                                                            <li>19</li>
-                                                                            <li>20</li>
-                                                                            <li>21</li>
-                                                                            <li>22</li>
-                                                                            <li>23</li>
-                                                                            <li>24</li>
-                                                                            <li>25</li>
-                                                                            <li>26</li>
-                                                                            <li>27</li>
-                                                                            <li><span class="active">28</span></li>
-                                                                            <li>29</li>
-                                                                            <li>30</li>
-                                                                            <li>31</li>
-                                                                        </ul>
+                                                                        <div class="days" id="days">
+                                                                            
+                                                                        </div>-->
                                                                     </div>
 
                                                                 </div>
@@ -496,14 +465,14 @@ ArrayList<Report> rl = rp.getAllReport();
                             <img src="HelperJSP/DisplayCmpImage.jsp?name=<%=e.getCOMPANY_NAME()%>"
                                  height="50px" width="60px" id="logo"><span
                                  id="l1">
-                                <b>Name:</b>
-                                <%=e.getCOMPANY_NAME()%>
+                                
+                                <b><%=e.getCOMPANY_NAME()%></b>
                             </span><br>
-                            <span id="l2"><b>Category:</b>
+                            <span id="l2">
                                 <%=e.getCATEGORY()%>
                             </span><br>
                             <span id="l3"
-                                  name=""><b>Status:</b>Individual/In-Poll</span>
+                                  name="">Individual/In-Poll</span>
                         </div>
                         <%}%>
                     </section>
@@ -578,7 +547,7 @@ ArrayList<Report> rl = rp.getAllReport();
 
                         </div>
                             <br>
-                                        <span><%=cmp1.getCATEGORY() %></span>
+                                        <!--<span><%--cmp1.getCATEGORY() --%></span>-->
                                         <span><%--rd.getOverallRatings(cmp1.getCOMPANY_ID()) --%></span>
                                     </div>
                                 </div>
@@ -638,7 +607,7 @@ ArrayList<Report> rl = rp.getAllReport();
 
                         </div>
                             <br>
-                                       <span><%=cmp2.getCATEGORY() %></span>
+                                       <!--<span><%--cmp2.getCATEGORY() --%></span>-->
                                         <span><%--rd.getOverallRatings(cmp2.getCOMPANY_ID()) --%></span>
                                    </div>
                                 </div>
@@ -669,15 +638,16 @@ ArrayList<Report> rl = rp.getAllReport();
 
                             <div id="comp-logo-name-cont">
                                 <img src="HelperJSP/DisplayCmpImage.jsp?name=<%=cmp.getCOMPANY_NAME()%>"
-                                     height="30px" width="40px">
+                                     height="50px" width="60px">
 
-                                <p class="com-name">
-                                    <%=cmp.getCOMPANY_NAME()%>
-                                </p>
+                                
                             </div>
                             <div class="com-content">
+                                <p class="com-name">
+                                    <b><%=cmp.getCOMPANY_NAME()%></b>
+                                </p><br>
                                 <div class="star-1">
-                            <span class="label">Ratings:</span>
+                            
                             <%if (ratings1 == 0) {%>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
@@ -721,8 +691,8 @@ ArrayList<Report> rl = rp.getAllReport();
                             <i class="fa-solid fa-star"></i>
                             <%}%>
 
-                        </div>
-                                <p><b>Category:</b>
+                                </div>
+                                <p>
                                     <%=cs1.getCATEGORY()%>
                                 </p>
                             </div>
@@ -735,9 +705,9 @@ ArrayList<Report> rl = rp.getAllReport();
                     <section id="page8">
 
                         
-                            <input type="search" placeholder="Search Company"
+                            <input type="search" placeholder="Enter Company Name"
                                    size="30" id="searchByName">
-                            <input type="search" placeholder="Search Poll-ID"
+                            <input type="search" placeholder="Enter Poll-ID"
                                    size="30" id="searchById">
                             <button id="search-poll_com-btn">Search</button>
                         <br><br><br>
@@ -810,11 +780,12 @@ ArrayList<Report> rl = rp.getAllReport();
                             <%}%>
 
                         </div>
+                                            
                                                 <span><%--cmp1.getCATEGORY() --%></span>
                                         <span><%--rd.getOverallRatings(cmp1.getCOMPANY_ID()) --%></span>
                                   <input class="file-upload"
                                                        name="report1"
-                                                       type="file">
+                                                       type="file" required>
                                             </div>
                                         </div>
                                         <div class="comp-cont-box2">
@@ -877,7 +848,7 @@ ArrayList<Report> rl = rp.getAllReport();
                                         <span><%--rd.getOverallRatings(cmp2.getCOMPANY_ID()) --%></span>
                                   <input class="file-upload"
                                                        name="report2"
-                                                       type="file">
+                                                       type="file" required>
                                             </div>
                                         </div>
                                     </div> <input type="hidden" class="cmpID" name="c1"
@@ -885,7 +856,7 @@ ArrayList<Report> rl = rp.getAllReport();
                                     <input type="hidden" name="c2"
                                            value="<%=cmp2.getCOMPANY_ID()%>">
                                     <input type="hidden" name="poll_id"
-                                           value="<%=e.getPOLL_ID()%>">
+                                           value="<%=e.getPOLL_ID()%>"><br>
                                     <button type="submit"
                                             style="margin-top: -20px;"
                                             class="poll-remove-btn1">Send
@@ -943,14 +914,13 @@ ArrayList<Report> rl = rp.getAllReport();
                                 <img src="HelperJSP/DisplayCmpImage.jsp?name=<%=e.getCOMPANY_NAME()%>"
                                      height="50px" width="60px"
                                      id="logo"><span id="l1">
-                                    <b>Name:</b>
-                                    <%=e.getCOMPANY_NAME()%>
+                                    <b><%=e.getCOMPANY_NAME()%></b>
                                 </span><br>
-                                <span id="l2"><b>Category:</b>
+                                <span id="l2">
                                     <%=e.getCATEGORY()%>
                                 </span><br>
                                 <span id="l3"
-                                      name=""><b>Status:</b>Individual/In-Poll</span>
+                                      name="">Individual/In-Poll</span>
                                 <br><br>
 
                                 <input id="regis_comp_btn"
@@ -967,6 +937,22 @@ ArrayList<Report> rl = rp.getAllReport();
         <script
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="javascript/AdminPanel.js?8"></script>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+        
+        calendar.on('dateClick', function(info) {
+            $.post("calendarCheck",{"date":info.dateStr},function(res){
+                alert(res);
+            })
+});
+      });
+        </script>
 <!--<script>
              $(document).ready(functi on () {
                      

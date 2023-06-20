@@ -25,7 +25,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
         }
 
         .form-box {
-            height: 420px;
+            height: 400px;
             width: 400px;
             background-color: white;
             position: relative;
@@ -84,14 +84,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
             top: 80px;
             position: absolute;
             width: 280px;
-            margin-left: 9px;
+            margin-left: 19px;
             transition: .3s;
         }
 
         .inputs {
             margin-top: 5px;
             margin-bottom: 12px;
-            width: 320px;
+            width: 300px;
             height: 25px;
             margin-left: 35px;
             border-radius: 5px;
@@ -133,7 +133,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
         .submit_btn{
             height: 40px;
-            width: 330px;
+            width: 310px;
             margin-top: 10px;
             background-color: rgb(237, 75, 75);
             border: 1.5px solid gray;
@@ -201,7 +201,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
         .Error {
             margin-left: 2.5vw;
             margin-top: -1vh;
-            font-size: 15px;
+            font-size: 12px;
             color: #f31b1b;
             font-weight: 600;
         }

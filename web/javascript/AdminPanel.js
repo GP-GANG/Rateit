@@ -12,13 +12,16 @@ $(document).ready(function () {
 //            window.location.assign("error_page.jsp");
 //            }
             // this will focus on  the clicked element
-            
+            printDates();
             $("tr a").click(function (a) {
             $("td").css({ "background-color": "rgba(12, 12, 12, 0.959)", "color": "white" });
-            $(a.target).parent().css({ "background": " white", "color": "black" })
+            if(a.target.localName == "a")
+            $(a.target).parent("td").css({ "background": " white", "color": "black" })
+            else
+            $(a.target).parent().parent().css({ "background": " white", "color": "black" })
             })
-            $(".default_page").click();
             
+            $("#default-page").click();
     })
         
         // CODE TO CHANGE PAGE 
@@ -50,6 +53,30 @@ $("#searchByName").change(function (){
                 }
         }
 })
+
+
+function printDates(){
+//    let calender = document.getElementById("days");
+//    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+//    const date = new Date();
+//    let month = months[date.getMonth()];
+//    let year  = date.getFullYear();
+//    
+//     var calendar = new Calendar(calender, {
+//     plugins: [ dayGridPlugin ]
+//     });
+//     
+//     calendar.render();
+
+document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+}
+
 
 /* JAVASCRIPT FOR OTHER PART */
 

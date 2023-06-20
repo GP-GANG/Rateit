@@ -98,14 +98,12 @@
             let redirectTo = "index.jsp";
 
             window.addEventListener("load", () => {
+                if(iterator >= 0)
                 setInterval(updateTime, 1000);
-
-  
+                
                 if (message.innerText != msg)
                     redirectTo = "Admin_panel.jsp";
-         
-              
-                
+
                 setTimeout(redirect, timeout * 1000);
             });
 
