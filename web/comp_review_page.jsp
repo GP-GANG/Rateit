@@ -36,7 +36,8 @@ int temp2 =1;
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title><%=cmp.getCOMPANY_NAME()%></title>
+   <title><%=cmp.getCOMPANY_NAME()%> | Rateit.com</title>
+   <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
    <script src="https://kit.fontawesome.com/c2a4c35825.js" crossorigin="anonymous"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
    <link rel="stylesheet" href="css\comp_review_page.css?123">

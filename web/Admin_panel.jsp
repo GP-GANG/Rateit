@@ -42,9 +42,9 @@ ArrayList<Report> rl = rp.getAllReport();
         <script src="https://kit.fontawesome.com/20a4a662a5.js"
         crossorigin="anonymous"></script>
         <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
-        <link rel="stylesheet" href="css/admin_panel.css?41">
-        <title>Admin Panel</title>
-
+        <link rel="stylesheet" href="css/admin_panel.css?4">
+        <title>Admin Panel | Rateit.com</title>
+        <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
         <script
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         
@@ -57,8 +57,8 @@ ArrayList<Report> rl = rp.getAllReport();
                                                                 <img id="rateit-logo"
                                                                     src="https://github.com/GP-GANG/rateit.github.io/blob/main/Other%20Files/photos/logo.png?raw=true">
                                                                 <tr height="50px">
-                                                                    <td><a href="#default_page" class="header-content" id="default-page">‎ <i
-                                                                                class="fa-solid fa-house" ></i>
+                                                                    <td><a href="#default_page" class="header-content default_page">‎ <i
+                                                                                class="fa-solid fa-house"></i>
                                                                             Dashboard</a></td>
                                                                 </tr>
                                                                 <tr height="50px">
@@ -465,14 +465,14 @@ ArrayList<Report> rl = rp.getAllReport();
                             <img src="HelperJSP/DisplayCmpImage.jsp?name=<%=e.getCOMPANY_NAME()%>"
                                  height="50px" width="60px" id="logo"><span
                                  id="l1">
-                                <b>Name:</b>
-                                <%=e.getCOMPANY_NAME()%>
+                                
+                                <b><%=e.getCOMPANY_NAME()%></b>
                             </span><br>
-                            <span id="l2"><b>Category:</b>
+                            <span id="l2">
                                 <%=e.getCATEGORY()%>
                             </span><br>
                             <span id="l3"
-                                  name=""><b>Status:</b>Individual/In-Poll</span>
+                                  name="">Individual/In-Poll</span>
                         </div>
                         <%}%>
                     </section>
@@ -501,7 +501,7 @@ ArrayList<Report> rl = rp.getAllReport();
                                     </div>
                                     <div class="rcr-box">
                                         <div class="star-1">
-                            <span class="label">Ratings:</span>
+                            <!--<span class="label">Ratings:</span>-->
                             <%if (ratings1 == 0) {%>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
@@ -546,8 +546,9 @@ ArrayList<Report> rl = rp.getAllReport();
                             <%}%>
 
                         </div>
-                                        <span><%=cmp1.getCATEGORY() %></span>
-                                        <span><%=rd.getOverallRatings(cmp1.getCOMPANY_ID()) %></span>
+                            <br>
+                                        <!--<span><%--cmp1.getCATEGORY() --%></span>-->
+                                        <span><%--rd.getOverallRatings(cmp1.getCOMPANY_ID()) --%></span>
                                     </div>
                                 </div>
                                 <div class="comp-cont-box2">
@@ -560,7 +561,7 @@ ArrayList<Report> rl = rp.getAllReport();
                                     </div>
                                     <div class="rcr-box">
                                          <div class="star-1">
-                            <span class="label">Ratings:</span>
+                            <!--<span class="label">Ratings:</span>-->
                             <%if (ratings1 == 0) {%>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
@@ -605,8 +606,9 @@ ArrayList<Report> rl = rp.getAllReport();
                             <%}%>
 
                         </div>
-                                       <span><%=cmp2.getCATEGORY() %></span>
-                                        <span><%=rd.getOverallRatings(cmp2.getCOMPANY_ID()) %></span>
+                            <br>
+                                       <!--<span><%--cmp2.getCATEGORY() --%></span>-->
+                                        <span><%--rd.getOverallRatings(cmp2.getCOMPANY_ID()) --%></span>
                                    </div>
                                 </div>
                             </div>
@@ -636,15 +638,16 @@ ArrayList<Report> rl = rp.getAllReport();
 
                             <div id="comp-logo-name-cont">
                                 <img src="HelperJSP/DisplayCmpImage.jsp?name=<%=cmp.getCOMPANY_NAME()%>"
-                                     height="30px" width="40px">
+                                     height="50px" width="60px">
 
-                                <p class="com-name">
-                                    <%=cmp.getCOMPANY_NAME()%>
-                                </p>
+                                
                             </div>
                             <div class="com-content">
+                                <p class="com-name">
+                                    <b><%=cmp.getCOMPANY_NAME()%></b>
+                                </p><br>
                                 <div class="star-1">
-                            <span class="label">Ratings:</span>
+                            
                             <%if (ratings1 == 0) {%>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
@@ -688,8 +691,8 @@ ArrayList<Report> rl = rp.getAllReport();
                             <i class="fa-solid fa-star"></i>
                             <%}%>
 
-                        </div>
-                                <p><b>Category:</b>
+                                </div>
+                                <p>
                                     <%=cs1.getCATEGORY()%>
                                 </p>
                             </div>
@@ -702,9 +705,9 @@ ArrayList<Report> rl = rp.getAllReport();
                     <section id="page8">
 
                         
-                            <input type="search" placeholder="Search Company"
+                            <input type="search" placeholder="Enter Company Name"
                                    size="30" id="searchByName">
-                            <input type="search" placeholder="Search Poll-ID"
+                            <input type="search" placeholder="Enter Poll-ID"
                                    size="30" id="searchById">
                             <button id="search-poll_com-btn">Search</button>
                         <br><br><br>
@@ -732,7 +735,7 @@ ArrayList<Report> rl = rp.getAllReport();
                                             </div>
                                             <div class="rcr-box">
                                                 <div class="star-1">
-                            <span class="label">Ratings:</span>
+                            <!--<span class="label">Ratings:</span>-->
                             <%if (ratings1 == 0) {%>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
@@ -777,11 +780,12 @@ ArrayList<Report> rl = rp.getAllReport();
                             <%}%>
 
                         </div>
-                                                <span><%=cmp1.getCATEGORY() %></span>
-                                        <span></span>
+                                            
+                                                <span><%--cmp1.getCATEGORY() --%></span>
+                                        <span><%--rd.getOverallRatings(cmp1.getCOMPANY_ID()) --%></span>
                                   <input class="file-upload"
                                                        name="report1"
-                                                       type="file">
+                                                       type="file" required>
                                             </div>
                                         </div>
                                         <div class="comp-cont-box2">
@@ -795,7 +799,7 @@ ArrayList<Report> rl = rp.getAllReport();
                                             </div>
                                             <div class="rcr-box">
                                                 <div class="star-1">
-                            <span class="label">Ratings:</span>
+                            <!--<span class="label">Ratings:</span>-->
                             <%if (ratings1 == 0) {%>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
@@ -840,11 +844,11 @@ ArrayList<Report> rl = rp.getAllReport();
                             <%}%>
 
                         </div>
-                                                <span><%=cmp2.getCATEGORY() %></span>
-                                        <span><%=rd.getOverallRatings(cmp2.getCOMPANY_ID()) %></span>
+                                                <span><%--cmp2.getCATEGORY() --%></span>
+                                        <span><%--rd.getOverallRatings(cmp2.getCOMPANY_ID()) --%></span>
                                   <input class="file-upload"
                                                        name="report2"
-                                                       type="file">
+                                                       type="file" required>
                                             </div>
                                         </div>
                                     </div> <input type="hidden" class="cmpID" name="c1"
@@ -852,7 +856,7 @@ ArrayList<Report> rl = rp.getAllReport();
                                     <input type="hidden" name="c2"
                                            value="<%=cmp2.getCOMPANY_ID()%>">
                                     <input type="hidden" name="poll_id"
-                                           value="<%=e.getPOLL_ID()%>">
+                                           value="<%=e.getPOLL_ID()%>"><br>
                                     <button type="submit"
                                             style="margin-top: -20px;"
                                             class="poll-remove-btn1">Send
@@ -910,14 +914,13 @@ ArrayList<Report> rl = rp.getAllReport();
                                 <img src="HelperJSP/DisplayCmpImage.jsp?name=<%=e.getCOMPANY_NAME()%>"
                                      height="50px" width="60px"
                                      id="logo"><span id="l1">
-                                    <b>Name:</b>
-                                    <%=e.getCOMPANY_NAME()%>
+                                    <b><%=e.getCOMPANY_NAME()%></b>
                                 </span><br>
-                                <span id="l2"><b>Category:</b>
+                                <span id="l2">
                                     <%=e.getCATEGORY()%>
                                 </span><br>
                                 <span id="l3"
-                                      name=""><b>Status:</b>Individual/In-Poll</span>
+                                      name="">Individual/In-Poll</span>
                                 <br><br>
 
                                 <input id="regis_comp_btn"

@@ -24,7 +24,8 @@ session.setMaxInactiveInterval(40*60);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <title>Request Poll | rateit.com</title>
+    <title>Request Poll | Rateit.com</title>
+    <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
     <link rel="stylesheet" href="css/request_poll.css?1">
     <link rel="stylesheet" href="css/loading_effect.css">
     <script src="javascript/loading_effect.js"></script>

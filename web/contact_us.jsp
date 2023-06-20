@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <title>Contact Us | rateit.com</title>
+    <title>Contact Us | Rateit.com</title>
+    <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
     <link rel="stylesheet" href="css/contact_us.css">
         <link rel="stylesheet" href="css/loading_effect.css">
     <script src="javascript/loading_effect.js"></script>
@@ -47,7 +48,7 @@
         </div>
         <div id="cont2">
             <div id="content">
-                <CENTER><b> CONTACT US </b></center>
+                
                 <form action="https://formspree.io/f/mqkobyvd" method="post">
                     <input class="name" type="text" id="username" name="username" placeholder="First Name :">
                     <input class="name" type="text" id="username" name="username" placeholder="Last Name :"><br>

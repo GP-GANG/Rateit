@@ -14,7 +14,8 @@
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Review Submitted</title>
+        <title>Review Submitted |Rateit.com</title>
+        <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
 
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');

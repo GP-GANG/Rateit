@@ -26,7 +26,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rate It | Recent Poll List</title>
+        <title>Recent Polls | Rateit.com</title>
+        <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
         <script src="https://kit.fontawesome.com/c2a4c35825.js" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/20a4a662a5.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/poll_result.css?1">

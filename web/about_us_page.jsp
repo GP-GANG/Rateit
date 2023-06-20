@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="javascript/loading_effect.js"></script>
    
-
+        <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
     <title>About Us | Rateit.com</title>
 </head>
 

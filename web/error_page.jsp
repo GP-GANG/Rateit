@@ -10,7 +10,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error Page | rateit.com</title>
+    <title>Error | Rateit.com</title>
+    <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
     <link rel="stylesheet" href="css/error_page.css?2">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');

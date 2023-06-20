@@ -26,7 +26,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rate it | Home Page</title>
+        <title>Home | Rateit.com</title>
+        <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
         <script src="https://kit.fontawesome.com/c2a4c35825.js" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/20a4a662a5.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -76,7 +77,7 @@
                                     <b>Polls</b>
 
                                     <div class="dropdown-content">
-                                        <a href="recent_poll_page.jsp?a=2">Previous Polls</a>
+                                        <a href="recent_poll_page.jsp?a=2">Expired Polls</a>
                                         <a href="recent_poll_page.jsp?a=1">Recent Polls</a>
                                         <a href="recent_poll_page.jsp?a=3">Upcoming Polls</a>
                                         <a href="recent_poll_page.jsp?a=4">Trending Polls</a>

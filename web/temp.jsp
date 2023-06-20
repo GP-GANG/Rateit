@@ -15,7 +15,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Page | Rateit.com</title>
+        <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
     </head>
     <body>
         <div id="preloader">

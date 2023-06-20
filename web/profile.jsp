@@ -25,7 +25,8 @@
             <link rel="stylesheet" href="css/loading_effect.css">
     <script src="javascript/loading_effect.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <title>Conpany Profile | rateit.com</title>
+        <title>Profile | Rateit.com</title>
+        <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
 

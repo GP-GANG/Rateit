@@ -27,7 +27,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Company Ranking | rateit.com</title>
+        <title>Rank Status | Rateit.com</title>
+        <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
         <link rel="stylesheet" href="css/rank_status.css?2">
         <script src="https://kit.fontawesome.com/c2a4c35825.js" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/20a4a662a5.js" crossorigin="anonymous"></script>

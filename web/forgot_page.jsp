@@ -12,7 +12,8 @@ String msg_name = msg.getMsg_name();
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forgot password | rateit.com</title>
+    <title>forgot password | Rateit.com</title>
+    <link rel="Shortcut Icon" type="image/png" href="img/rate_icon.png">
     <link rel="stylesheet" href="css/forgot_page.css">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
             <script src="https://code.jquery.com/jquery-3.4.1.min.js"
