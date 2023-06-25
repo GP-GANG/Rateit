@@ -936,7 +936,7 @@ ArrayList<Report> rl = rp.getAllReport();
 
         <script
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="javascript/AdminPanel.js?8"></script>
+        <script src="javascript/AdminPanel.js?8" differ></script>
         
         <script>
             document.addEventListener('DOMContentLoaded', function() {
@@ -952,6 +952,8 @@ ArrayList<Report> rl = rp.getAllReport();
             })
 });
       });
+      
+     
         </script>
 <!--<script>
              $(document).ready(functi on () {

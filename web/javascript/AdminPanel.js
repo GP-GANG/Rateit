@@ -21,9 +21,16 @@ $(document).ready(function () {
             $(a.target).parent().parent().css({ "background": " white", "color": "black" })
             })
             
-            $("#default-page").click();
+
     })
-        
+      
+setTimeout(launchDeshboard, 500);
+
+function launchDeshboard(){
+    $(".default_page :first").click();
+//    console.log($(".default_page"))
+//    console.log("Deshboard Clicked")
+}
         // CODE TO CHANGE PAGE 
 $("#filter").change(function () {
         let option = $("#filter").val();
